@@ -5,7 +5,13 @@ function App() {
     return(
         <div className="App" >
             <input type="text" placeholder="Search..."/>
-            {JSONDATA.map((val, key) => )}
+            {JSONDATA.map((val, key) => {
+                return <div className="user" key={key}>
+                    <p>
+                        {val.first_name}
+                    </p>
+                </div>;
+                })}
         </div>
     );
 }
